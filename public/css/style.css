@@ -68,7 +68,7 @@ body {
 
 /* Cards */
 
-.card {
+.listing-card {
     border: none !important;
     margin-bottom: 2rem;
 }
@@ -120,9 +120,9 @@ New Page */
 }
 
 /* Show Page */
-.show-img {
+ .show-img {
     height: 30vh;
-}
+} 
 
 .btns {
     display: flex;
@@ -131,4 +131,20 @@ New Page */
 .show-card {
     padding-left : 0;
     padding-right: 0;
-}
+} 
+
+/* .show-img {
+    height: 30vh;
+    object-fit: cover; /* Added to ensure the image covers the area nicely */
+
+
+
+/* .btns {
+    display: flex;
+    gap: 1rem; /* Adds spacing between the buttons */
+    /* align-items: center; /* Vertically aligns items in the center */
+
+/* .show-card {
+    padding-left: 0;
+    padding-right: 0;
+} */

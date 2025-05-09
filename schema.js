@@ -12,9 +12,17 @@ module.exports.listingSchema = Joi.object({
     }).required(),
 });
 
-// module.exports.reviewSchema = Joi.object({
-//     review: Joi.object({
-//         rating: Joi.number().required().min(1).max(5),
-//         comment:Joi.string().required(),
-//     }).required()
-// })
+module.exports.reviewSchema = Joi.object({
+    review: Joi.object({
+        rating: Joi.number().required().min(1).max(5),
+        comment:Joi.string().required(),
+    }).required()
+});
+
+module.exports.bookingSchema = Joi.object({
+    booking: Joi.object({
+        checkIn: Joi.date().required(),
+        checkOut: Joi.date().required().greater(Joi.ref('checkIn')),
+        guests: Joi.number().required().min(1)
+    }).required()
+});

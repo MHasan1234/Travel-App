@@ -1,0 +1,39 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <h3>Book <%= listing.title %></h3>
+        
+        <form action="/listings/<%= listing._id %>/bookings" method="POST">
+            <div class="mb-3">
+                <label for="checkIn" class="form-label">Check-in Date</label>
+                <input type="date" name="booking[checkIn]" id="checkIn" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="checkOut" class="form-label">Check-out Date</label>
+                <input type="date" name="booking[checkOut]" id="checkOut" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="guests" class="form-label">Number of Guests</label>
+                <input type="number" name="booking[guests]" id="guests" class="form-control" min="1" required>
+            </div>
+            
+            <button type="submit" class="btn btn-success">Confirm Booking</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Set min date to today
+    document.addEventListener('DOMContentLoaded', function() {
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('checkIn').min = today;
+        
+        // Update checkout min date when checkin changes
+        document.getElementById('checkIn').addEventListener('change', function() {
+            document.getElementById('checkOut').min = this.value;
+        });
+    });
+</script>
