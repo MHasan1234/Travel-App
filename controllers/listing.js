@@ -32,11 +32,12 @@ module.exports.showListing = async (req, res) => {
 module.exports.createListing = async  (req, res, next) => {
   let response = await geocodingClient.forwardGeocode({
   query: req.body.listing.location,
-  limit: 1
+  limit: 1,
 })
   .send();
-
-//   res.send("done!");
+  
+  // console.log(response.body.features[0].geometry);
+  // res.send("done!");
 
   let url = req.file.path;
   let filename = req.file.filename;

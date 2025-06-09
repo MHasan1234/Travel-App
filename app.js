@@ -91,6 +91,10 @@ app.use((req, res, next) => {
   // res.locals.currentUser = req.user;
   res.locals.error = req.flash("error");
   res.locals.currUser = req.user;
+  //  console.log("--- Middleware Debug ---");
+  //   console.log("req.user:", req.user);
+  //   console.log("res.locals.currUser:", res.locals.currUser);
+  //   console.log("------------------------");
 
   // console.log(res.locals.success);
   next();

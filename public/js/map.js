@@ -7,7 +7,7 @@
         zoom: 9 // starting zoom
     });
 
-    // console.log(coordinates);
+    console.log(coordinates);
 
      const marker = new mapboxgl.Marker()
         .setLngLat(coordinates) //Listing.geometry.coordinates
