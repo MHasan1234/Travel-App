@@ -21,6 +21,8 @@ const User = require("./models/user.js");
 const bookingRouter = require("./routes/booking.js");
 const middleware = require("./middleware");
 
+const listingController = require("./controllers/listing");
+
 const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
@@ -117,6 +119,7 @@ app.use((req, res, next) => {
 
 
 app.use("/listings", listingRouter);
+app.get("/", listingController.index);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
 app.use("/listings/:id/bookings", bookingRouter);
