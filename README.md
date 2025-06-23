@@ -1,6 +1,28 @@
-A Travel and Destination Booking App made with the help of Backend services like EJS, Node.JS, Express.JS.
-Users can signup , login , create and manage their listings or locations,
-Also they can add & delete reviews and get the location of the place with the help of Maps.
+🧾 Voyage – Travel Listing & Booking App
+A full-stack travel accommodation platform inspired by Airbnb, built using server-side rendering with EJS.
+
+🔧 Tech Stack
+Frontend: EJS, Bootstrap
+
+Backend: Node.js, Express.js, MongoDB, Mongoose
+
+Authentication: Passport.js, Sessions
+
+Deployment: Render
+
+✅ Features
+User login and signup
+
+Create, edit, and delete travel listings
+
+Booking system with history and cancellation
+
+Review and rating system
+
+Admin panel and route protection
+
+🚀 Live URL
+https://voyage-travel-and-destination-booking-app.onrender.com/
 
 ![image](https://github.com/user-attachments/assets/e1473a71-4b8f-494f-bde2-a3c696919eb2)
 ![image](https://github.com/user-attachments/assets/06e3fed0-edee-42be-9038-f96bae905beb)
