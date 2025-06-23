@@ -21,6 +21,8 @@ Review and rating system
 
 Admin panel and route protection
 
+Map integration using Mapbox for listing geolocation
+
 🚀 Live URL
 https://voyage-travel-and-destination-booking-app.onrender.com/
 
