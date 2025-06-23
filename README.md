@@ -1,5 +1,5 @@
 🧾 Voyage – Travel Listing & Booking App
-A full-stack travel accommodation platform inspired by Airbnb, built using server-side rendering with EJS.
+A full-stack travel accommodation platform  built using server-side rendering with EJS.
 
 🔧 Tech Stack
 Frontend: EJS, Bootstrap
